@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'iron';
+    src: url('../fonts/iron-onblackletter-regular-webfont.woff2') format('woff2'),
+         url('../fonts/iron-onblackletter-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+  font-size: 10px;
+  background: url(/images/kanyepablorelease.jpg) bottom center no-repeat;
+  background-size: cover;
+}
+
+h1 {
+    font-family: 'iron';
+    color: white;
+    font-size: 6em;
+    margin: 0;
+    margin-bottom: 2em;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body > div {
+    margin-top: -2em;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  border: .16px solid black;
+  border-radius: .16px;
+  margin: 10px;
+  font-size: 16px;
+  padding: 12px .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+  cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.6);
+  border-color: #ff6724;
+  box-shadow: 0 0 20px #ff6724;
+}
+
+.key span:first-child {
+ font-family: 'iron';
+  display: block;
+  font-size: 60px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ff6724;
+}
